@@ -855,7 +855,7 @@
                     position: relative;
                     background: var(--primery);
                     border-radius: 30px;
-                    padding: 49px 26px;
+                    padding: 17px 18px;
                     transition: all linear 300ms;
                     z-index: 1;
                     height: 100%;
@@ -989,42 +989,28 @@
                     padding-bottom: 22px;
                 }
                 
-                .error-message {
+                .error {
                     color: #ed0f0f;
                     font-size: var(--fs-sm);
                     font-weight: 500;
-                    font-family: "Roboto-flex";
                     margin-top: 5px;
                 }
                 
-                .success-popup {
+                .popup {
                     position: fixed;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    background-color: #ffffff;
-                    border: 1px solid #007bff;
+                    background: var(--black-ligth);
+                    border: 1px solid transparent;
                     padding: 20px;
-                    border-radius: 5px;
+                    border-radius: 10px;
                     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
                     z-index: 999;
                 }
                 
-                .success-popup p {
-                    margin-bottom: 10px;
-                }
-                
-                .success-popup button {
-                    background-color: #007bff;
-                    color: #fff;
-                    border: none;
+                .paddingClose {
                     padding: 10px 20px;
-                    border-radius: 5px;
-                    cursor: pointer;
-                }
-                
-                .success-popup button:hover {
-                    background-color: #0056b3;
                 }
                 
                 .LineLogo {
@@ -1195,13 +1181,16 @@
                 
                 @keyframes gradient2 {
                     0% {
-                        background-position: 0% 0%;
+                        background-size: 66% 120%;
+                        background-position: -46% 50%;
                     }
                     50% {
-                        background-position: 100% 100%;
+                        background-size: 93% 180%;
+                        background-position: 0% 50%;
                     }
                     100% {
-                        background-position: 0% 0%;
+                        background-size: 66% 120%;
+                        background-position: 147% 50%;
                     }
                 }
                 /* ----------------media quary---------------- */
@@ -1290,6 +1279,9 @@
                     .RoadMapPostion {
                         top: 5%;
                     }
+                    .content {
+                        padding: 49px 26px;
+                    }
                     .min_h_600 {
                         height: 600px;
                     }
@@ -1300,8 +1292,9 @@
                         padding: 49px 26px;
                     }
                     .worldLayer {
-                        width: 200px;
-                        height: 200px;
+                        width: 124px;
+                        height: 140px;
+                        bottom: 4%;
                     }
                     .circle {
                         width: 52px;
@@ -1371,6 +1364,11 @@
                         right: -5%;
                         width: 700px;
                         height: 88px;
+                    }
+                    .worldLayer {
+                        width: 200px;
+                        height: 200px;
+                        bottom: 24%;
                     }
                 }
                 

@@ -30,13 +30,13 @@ const Roadmap = () => {
         <h2 className="ff_Roboto fw-bold fs_2xl lh_62 text_Main text-center pt-3 mb-0 ">
           Milestones and markers
         </h2>
-        <div class="timeline1  pt-5 mt_150">
+        <div className="timeline1  pt-5 mt_150">
           <div className="LineLogo">
             <img className="w-100" src={LineIcon} alt="LineIcon" />
           </div>
-          <div class="container1 pt-4 pt-sm-5 right">
+          <div className="container1 pt-4 pt-sm-5 right">
             <div data-aos="zoom-out" className="Content2 ">
-              <div class="content">
+              <div className="content">
                 <h2 className="text-center Text_gradient">Oct 2014</h2>
                 <p className="text-center ff_Roboto fw-normal fs_md lh_24 text_Main opacity_7 mb-0 ">
                   Hired our first employee
@@ -44,9 +44,9 @@ const Roadmap = () => {
               </div>
             </div>
           </div>
-          <div class="container1 pt-4 pt-sm-5 mt-lg-5 left">
+          <div className="container1 pt-4 pt-sm-5 mt-lg-5 left">
             <div data-aos="zoom-out" className="Content2">
-              <div class="content">
+              <div className="content">
                 <h2 className="text-center Text_gradient">Oct 2014</h2>
                 <p className="text-center ff_Roboto fw-normal fs_md lh_24 text_Main opacity_7 mb-0 ">
                   Launched Bitcoin wallet
@@ -54,9 +54,9 @@ const Roadmap = () => {
               </div>
             </div>
           </div>
-          <div class="container1 mt-lg-5 pt-4 pt-sm-5 right">
+          <div className="container1 mt-lg-5 pt-4 pt-sm-5 right">
             <div data-aos="zoom-out" className="Content2">
-              <div class="content">
+              <div className="content">
                 <h2 className="text-center Text_gradient">Oct 2015</h2>
                 <p className="text-center ff_Roboto fw-normal fs_md lh_24 text_Main opacity_7 mb-0 ">
                   1st prize by Bit angels at Coin Agenda,
@@ -65,9 +65,9 @@ const Roadmap = () => {
               </div>
             </div>
           </div>
-          <div class="container1 pt-4 pt-sm-5 mt-lg-5 left">
+          <div className="container1 pt-4 pt-sm-5 mt-lg-5 left">
             <div data-aos="zoom-out" className="Content2">
-              <div class="content">
+              <div className="content">
                 <h2 className="text-center Text_gradient">Jan 2020</h2>
                 <p className="text-center ff_Roboto fw-normal fs_md lh_24 text_Main opacity_7 mb-0 d-sm-flex align-items-center gap-2 justify-content-center ">
                   launch On{" "}
@@ -80,9 +80,9 @@ const Roadmap = () => {
               </div>
             </div>
           </div>
-          <div class="container1 mt-lg-5 pt-4 pt-sm-5 right">
+          <div className="container1 mt-lg-5 pt-4 pt-sm-5 right">
             <div data-aos="zoom-out" className="Content2">
-              <div class="content">
+              <div className="content">
                 <h2 className="text-center Text_gradient">Jan 2022</h2>
                 <p className="text-center ff_Roboto fw-normal fs_md lh_24 text_Main opacity_7 mb-0 ">
                   Trusted by 10 Millions+ Users{" "}

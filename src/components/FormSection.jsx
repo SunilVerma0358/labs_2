@@ -13,7 +13,7 @@ const FormSection = () => {
     number: "",
     email: "",
   });
-  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -47,11 +47,11 @@ const FormSection = () => {
 
     setFormErrors(errors);
     if (Object.keys(errors).length === 0) {
-      setShowSuccessPopup(true);
+      setShowPopup(true);
     }
   };
   const handlePopupClose = () => {
-    setShowSuccessPopup(false);
+    setShowPopup(false);
     setFormData({
       FirstName: "",
       LastName: "",
@@ -98,7 +98,7 @@ const FormSection = () => {
                       />
                     </div>
                     {formErrors.FirstName && (
-                      <p className="error-message">{formErrors.FirstName}</p>
+                      <p className="error ff_Roboto">{formErrors.FirstName}</p>
                     )}
                   </div>
                   <div className="d-flex flex-column w_50 pt-2 pt-sm-0">
@@ -121,7 +121,7 @@ const FormSection = () => {
                       />
                     </div>
                     {formErrors.LastName && (
-                      <p className="error-message">{formErrors.LastName}</p>
+                      <p className="error ff_Roboto">{formErrors.LastName}</p>
                     )}
                   </div>
                 </div>
@@ -146,7 +146,7 @@ const FormSection = () => {
                       />
                     </div>
                     {formErrors.number && (
-                      <p className="error-message">{formErrors.number}</p>
+                      <p className="error ff_Roboto">{formErrors.number}</p>
                     )}
                   </div>
                   <div className="d-flex flex-column w_50 pt-2 pt-sm-0">
@@ -169,7 +169,7 @@ const FormSection = () => {
                       />
                     </div>
                     {formErrors.email && (
-                      <p className="error-message">{formErrors.email}</p>
+                      <p className="error ff_Roboto">{formErrors.email}</p>
                     )}
                   </div>
                 </div>
@@ -184,10 +184,17 @@ const FormSection = () => {
                   Subscribe
                 </button>
               </form>
-              {showSuccessPopup && (
-                <div className="success-popup">
-                  <p>Form submitted successfully!</p>
-                  <button onClick={handlePopupClose}>Close</button>
+              {showPopup && (
+                <div className="popup">
+                  <p className="ff_Roboto fw-medium fs_xmd mb-0 pb-2 text_Main">
+                    Form submitted successfully!
+                  </p>
+                  <button
+                    onClick={handlePopupClose}
+                    className="Nav_btn paddingClose "
+                  >
+                    Close
+                  </button>
                 </div>
               )}
             </div>
