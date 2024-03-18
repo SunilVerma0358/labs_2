@@ -71,10 +71,10 @@ const Roadmap = () => {
                 <h2 className="text-center Text_gradient">Jan 2020</h2>
                 <p className="text-center ff_Roboto fw-normal fs_md lh_24 text_Main opacity_7 mb-0 d-sm-flex align-items-center gap-2 justify-content-center ">
                   launch On{" "}
-                  <span className="d-flex align-items-center gap-3 pt-3 pt-sm-0">
-                    <img className="w-25" src={IndiaFlag} alt="india" />
-                    <img className="w-25" src={UsFlag} alt="india" />
-                    <img className="w-25" src={Amrica} alt="india" />
+                  <span className="d-flex align-items-center gap-3 pt-3 pt-sm-0 justify-content-center">
+                    <img className="w_25" src={IndiaFlag} alt="india" />
+                    <img className="w_25" src={UsFlag} alt="india" />
+                    <img className="w_25" src={Amrica} alt="india" />
                   </span>
                 </p>
               </div>

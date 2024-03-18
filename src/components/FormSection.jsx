@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 const FormSection = () => {
+  const checkRef = useRef(null);
   const [formData, setFormData] = useState({
     FirstName: "",
     LastName: "",
@@ -43,6 +44,9 @@ const FormSection = () => {
     }
     if (!regex.email.test(formData.email)) {
       errors.email = "Email is invalid.";
+    }
+    if (!checkRef.current.checked) {
+      errors.checkbox = "Checkbox is not fill ";
     }
 
     setFormErrors(errors);
@@ -174,12 +178,20 @@ const FormSection = () => {
                   </div>
                 </div>
                 <div className="d-flex gap-4 align-items-center pt-3">
-                  <input type="checkbox" />
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    defaultChecked={true}
+                    ref={checkRef}
+                  />
                   <p className="ff_Roboto fw-normal fs_sm lh_18 text_Main mb-0">
                     By sending this form I confirm that I have read and accept
-                    the Privacy Policy
+                    the <span className="fw-bold">Privacy Policy</span>
                   </p>
                 </div>
+                {formErrors.checkbox && (
+                  <p className="error ff_Roboto">{formErrors.checkbox}</p>
+                )}
                 <button className="Nav_btn InputBtnPadding  mt-4">
                   Subscribe
                 </button>

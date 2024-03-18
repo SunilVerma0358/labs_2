@@ -1147,6 +1147,10 @@
                     display: inline-flex !important;
                     align-items: end !important;
                 }
+                
+                .w_25 {
+                    width: 10%;
+                }
                 /* -------------keyframes------------- */
                 
                 @keyframes preloderA {
@@ -1268,6 +1272,9 @@
                     }
                     .mt_150 {
                         margin-top: 80px !important;
+                    }
+                    .w_25 {
+                        width: 25%;
                     }
                     .back {
                         width: 24px;

@@ -10,8 +10,8 @@ const Licensable = () => {
         </h2>
         <div className="pt-4 pt-sm-5 position-relative z-1">
           <div className="worldLayer"></div>
-          <img className="w-100 border_r" src={MoblieVideoImg} alt="Img" />
-          <div className="circle">
+          <img className="w-100 border_r " src={MoblieVideoImg} alt="Img" />
+          <div className="circle cursor">
             <img className="w-25" src={playsvg} alt="svg" />
           </div>
         </div>
