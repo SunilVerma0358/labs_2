@@ -6,16 +6,20 @@ const MaskMove = () => {
       <div className="container my-sm-5 position-relative z-1">
         <div className="makeMoveLayer"></div>
         <div>
-          <img className="w-100 border_r" src={MaskMoveImg} alt="img" />
+          <img
+            className="w-100 border_r min_h_210 object_fit"
+            src={MaskMoveImg}
+            alt="img"
+          />
         </div>
         <div className="row pt-4">
           <div className="col-md-4 col-12 ">
-            <div className="nameBtn">
+            <div className="nameBtn ms-2 ms-sm-0">
               <button className="ff_Roboto fw-bold fs_xmd lh_27 text_Main nameBtn2 gaming_btnPadding">
                 name@domain.com
               </button>
             </div>
-            <button className="Nav_btn Padding_btnMove  mt-4 ms-sm-3 ms-md-0">
+            <button className="Nav_btn Padding_btnMove ms-2  mt-4 ms-sm-3 ms-md-0">
               Make Your Move
             </button>
           </div>

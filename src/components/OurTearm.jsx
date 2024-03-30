@@ -18,9 +18,9 @@ const OurTearm = () => {
           <div className="border_color  mt_150">
             <div className="border_color2">
               <div className="overTalkes">
-                <button className="overTalkes_btn ff_Roboto fw-semibold">
+                <div className="overTalkes_btn ff_Roboto fw-semibold">
                   Our Team
-                </button>
+                </div>
               </div>
             </div>
           </div>

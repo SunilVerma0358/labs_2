@@ -22,7 +22,7 @@ const Roadmap = () => {
           <div className="border_color mt_150">
             <div className="border_color2">
               <div className="overTalkes">
-                <button className="overTalkes_btn">Road map</button>
+                <div className="overTalkes_btn">Road map</div>
               </div>
             </div>
           </div>

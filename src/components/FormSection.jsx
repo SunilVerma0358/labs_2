@@ -177,18 +177,19 @@ const FormSection = () => {
                     )}
                   </div>
                 </div>
-                <div className="d-flex gap-4 align-items-center pt-3">
+                <label className="d-flex gap-2 gap-sm-4 align-items-center pt-3">
                   <input
+                    className="inputchecbox"
                     type="checkbox"
                     id="checkbox"
-                    defaultChecked={true}
+                    defaultChecked={false}
                     ref={checkRef}
                   />
                   <p className="ff_Roboto fw-normal fs_sm lh_18 text_Main mb-0">
                     By sending this form I confirm that I have read and accept
                     the <span className="fw-bold">Privacy Policy</span>
                   </p>
-                </div>
+                </label>
                 {formErrors.checkbox && (
                   <p className="error ff_Roboto">{formErrors.checkbox}</p>
                 )}

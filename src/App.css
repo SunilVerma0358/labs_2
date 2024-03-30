@@ -183,6 +183,10 @@
                     height: 500px;
                 }
                 
+                .min_h_210 {
+                    min-height: 210px;
+                }
+                
                 .min_h_600 {
                     height: 500px;
                 }
@@ -210,8 +214,8 @@
                 }
                 
                 .py_19 {
-                    padding-top: 19.5px;
-                    padding-bottom: 19.5px;
+                    padding-top: 10.5px;
+                    padding-bottom: 10.5px;
                 }
                 
                 .pb_43 {
@@ -230,6 +234,10 @@
                     padding: 10px 30px;
                 }
                 /* preloader */
+                
+                .object_fit {
+                    object-fit: cover;
+                }
                 
                 .preloaderA {
                     animation: preloderA 2s linear infinite;
@@ -941,7 +949,13 @@
                 }
                 
                 .inputM:hover {
-                    border: 1px solid transparent
+                    border: 1px solid transparent;
+                }
+                
+                input[type=checkbox] {
+                    accent-color: #fff;
+                    height: 18px;
+                    width: 18px;
                 }
                 
                 .inputPlace {
@@ -1319,6 +1333,10 @@
                     }
                     .Card_About2:hover {
                         transform: translateY(-20px);
+                    }
+                    .py_19 {
+                        padding-top: 19.5px;
+                        padding-bottom: 19.5px;
                     }
                 }
                 

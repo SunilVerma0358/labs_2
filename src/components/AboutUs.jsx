@@ -13,9 +13,9 @@ const AboutUs = () => {
           <div className="border_color">
             <div className="border_color2">
               <div className="overTalkes">
-                <button className="overTalkes_btn ff_Roboto fs_sm fw-normal">
+                <div className="overTalkes_btn ff_Roboto fs_sm fw-normal">
                   DOERS OVER TALKERS
-                </button>
+                </div>
               </div>
             </div>
           </div>
